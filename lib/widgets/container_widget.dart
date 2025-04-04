@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ft_apk_parkir/constants/color.dart';
 import 'package:gap/gap.dart';
 
 class ContainerWidget extends StatelessWidget {
@@ -29,9 +30,11 @@ class ContainerWidget extends StatelessWidget {
           if(actionTeks != null && onTap != null)
           ElevatedButton(
             onPressed: onTap,
+            style: ButtonStyle(
+            ),
             child: Text(
               actionTeks!,
-              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600,color: AppColors.primary),
             ),
           ),
         ],

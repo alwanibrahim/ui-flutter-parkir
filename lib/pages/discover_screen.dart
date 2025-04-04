@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:ft_apk_parkir/widgets/category_widget.dart';
 import 'package:ft_apk_parkir/widgets/hero_widget.dart';
 import 'package:ft_apk_parkir/widgets/inprogress_widget.dart';
+import 'package:ft_apk_parkir/widgets/more_widget.dart';
 import 'package:ft_apk_parkir/widgets/nearby_widget.dart';
 import 'package:gap/gap.dart';
 
@@ -22,7 +24,11 @@ class _DiscoverScreenState extends State<DiscoverScreen> {
             Gap(20),
             InprogressWidget(),
             Gap(20),
-            NearbyWidget()
+            NearbyWidget(),
+            Gap(20),
+            CategoryWidget(),
+            Gap(20),
+            MoreWidget(),
           ],
         ),
       ) ,
